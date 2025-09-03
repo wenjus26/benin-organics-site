@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actualités - Benin Organics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="site-header"></div>
+  <main class="flex-1" id="page-news">
+    <section class="py-16 bg-gradient-to-br from-green-50 to-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="inline-flex items-center mb-6 bg-green-100 text-green-800 px-4 py-2 rounded-full">📰 <span class="ml-2" data-i18n="nav.news"></span></span>
+          <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6" data-i18n="news.title">Actualités & Événements</h1>
+          <p class="text-xl text-gray-600 leading-relaxed" data-i18n="news.subtitle">Suivez les dernières nouvelles ...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="mb-12 border-2 border-green-100 overflow-hidden rounded-lg">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              <div class="bg-gradient-to-br from-green-100 to-green-200 p-12 flex items-center justify-center text-8xl">🏆</div>
+              <div class="p-8 lg:p-12">
+                <span class="inline-block mb-4 bg-green-100 text-green-800 px-3 py-1 rounded" data-i18n="news.featured.category">Certification</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="news.featured.title">Benin Organics obtient ...</h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6" data-i18n="news.featured.excerpt">Une étape importante ...</p>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center space-x-2 text-gray-500 text-sm"><span>📅</span><span>15 août 2024</span></div>
+                  <button class="border border-green-600 text-green-600 hover:bg-green-50 rounded px-4 py-2" data-i18n="news.readMore">Lire plus</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12" data-i18n="news.recent">Actualités Récentes</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="border-2 border-gray-100 hover:border-green-200 transition-colors overflow-hidden rounded-lg">
+              <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-8 text-center">
+                <div class="text-4xl mb-2">🤝</div>
+                <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded" data-i18n="news.card1.category">Partenariats</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2" data-i18n="news.card1.title">Nouveau partenariat ...</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3" data-i18n="news.card1.excerpt">Extension de notre réseau ...</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div>📅 28 juil</div>
+                  <button class="text-green-600 hover:text-green-700" data-i18n="news.read">Lire</button>
+                </div>
+              </div>
+            </div>
+            <div class="border-2 border-gray-100 hover:border-green-200 transition-colors overflow-hidden rounded-lg">
+              <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-8 text-center">
+                <div class="text-4xl mb-2">🏭</div>
+                <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded" data-i18n="news.card2.category">Infrastructure</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2" data-i18n="news.card2.title">Inauguration de notre ...</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3" data-i18n="news.card2.excerpt">Doublement de notre capacité ...</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div>📅 10 juil</div>
+                  <button class="text-green-600 hover:text-green-700" data-i18n="news.read">Lire</button>
+                </div>
+              </div>
+            </div>
+            <div class="border-2 border-gray-100 hover:border-green-200 transition-colors overflow-hidden rounded-lg">
+              <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-8 text-center">
+                <div class="text-4xl mb-2">🔗</div>
+                <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded" data-i18n="news.card3.category">Innovation</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2" data-i18n="news.card3.title">Lancement de notre ...</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3" data-i18n="news.card3.excerpt">Technologie de pointe ...</p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <div>📅 18 mai</div>
+                  <button class="text-green-600 hover:text-green-700" data-i18n="news.read">Lire</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+

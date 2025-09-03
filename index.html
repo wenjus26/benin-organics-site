@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benin Organics SA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="site-header"></div>
+  <main class="flex-1" id="page-home">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
+      <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="inline-flex items-center mb-6 bg-green-100 text-green-800 px-4 py-2 rounded-full">
+            <span class="mr-2">🌿</span>
+            <span data-i18n="home.hero.badge">Certifié Biologique</span>
+          </span>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" data-i18n="home.hero.title"></h1>
+          <div class="text-2xl sm:text-3xl font-semibold text-green-600 mb-6" data-i18n="home.hero.subtitle"></div>
+          <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed" data-i18n="home.hero.description"></p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="products.html" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md text-lg">
+              <span data-i18n="home.hero.cta"></span>
+              <span class="ml-2">➜</span>
+            </a>
+            <a href="contact.html" class="inline-flex items-center justify-center border border-green-600 text-green-600 hover:bg-green-50 px-8 py-3 rounded-md text-lg" data-i18n="home.hero.contact"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div class="text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">👥</div>
+            <div class="text-3xl font-bold text-gray-900 mb-2" data-i18n="home.stats.producers"></div>
+            <div class="text-gray-600" data-i18n="home.stats.producersLabel"></div>
+          </div>
+          <div class="text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">📈</div>
+            <div class="text-3xl font-bold text-gray-900 mb-2" data-i18n="home.stats.experience"></div>
+            <div class="text-gray-600" data-i18n="home.stats.experienceLabel"></div>
+          </div>
+          <div class="text-center">
+            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">🏭</div>
+            <div class="text-3xl font-bold text-gray-900 mb-2" data-i18n="home.stats.capacity"></div>
+            <div class="text-gray-600" data-i18n="home.stats.capacityLabel"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6" data-i18n="home.mission.title"></h2>
+          <p class="text-lg text-gray-600 leading-relaxed" data-i18n="home.mission.description"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6" data-i18n="home.certifications.title"></h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto" data-i18n="home.certifications.description"></p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="border-2 border-green-100 hover:border-green-200 transition-colors rounded-lg">
+              <div class="p-8 text-center">
+                <div class="flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mx-auto mb-6">
+                  <span class="text-2xl font-bold text-white">US</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3" data-i18n="home.certifications.usda"></h3>
+                <p class="text-gray-600" data-i18n="home.certifications.usdaDesc"></p>
+              </div>
+            </div>
+
+            <div class="border-2 border-blue-100 hover:border-blue-200 transition-colors rounded-lg">
+              <div class="p-8 text-center">
+                <div class="flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full mx-auto mb-6">
+                  <span class="text-2xl font-bold text-white">EU</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3" data-i18n="home.certifications.eu"></h3>
+                <p class="text-gray-600" data-i18n="home.certifications.euDesc"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-green-600">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6" data-i18n="home.cta.title"></h2>
+          <p class="text-xl text-green-100 mb-8" data-i18n="home.cta.subtitle"></p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="products.html" class="inline-flex items-center justify-center bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg">
+              <span data-i18n="home.cta.viewProducts"></span>
+              <span class="ml-2">➜</span>
+            </a>
+            <a href="contact.html" class="inline-flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-md text-lg" data-i18n="home.cta.quote"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+

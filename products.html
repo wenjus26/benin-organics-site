@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produits - Benin Organics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="site-header"></div>
+  <main class="flex-1" id="page-products">
+    <section class="py-16 bg-gradient-to-br from-green-50 to-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="inline-flex items-center mb-6 bg-green-100 text-green-800 px-4 py-2 rounded-full">🌿 <span class="ml-2" data-i18n="nav.products"></span></span>
+          <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6" id="products-title"></h1>
+          <p class="text-xl text-gray-600 leading-relaxed" id="products-subtitle"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div class="border-2 hover:border-green-200 transition-all duration-300 hover:shadow-lg rounded-lg">
+            <div class="text-center pb-4 p-8">
+              <div class="flex items-center justify-center w-16 h-16 bg-blue-500 rounded-full mx-auto mb-4">💧</div>
+              <div class="text-2xl font-bold text-gray-900" data-i18n="products.oilsTitle">Huiles de Soja Biologiques</div>
+              <p class="text-gray-600 leading-relaxed mt-4" data-i18n="products.oilsDesc">Huiles de première qualité...</p>
+              <div class="mt-6 space-y-2">
+                <div class="font-semibold text-gray-900" data-i18n="products.features"></div>
+                <ul class="space-y-2 text-left mx-auto max-w-xs text-sm text-gray-600">
+                  <li>• <span data-i18n="products.oilsF1">Extraction à froid</span></li>
+                  <li>• <span data-i18n="products.oilsF2">Qualité premium</span></li>
+                  <li>• <span data-i18n="products.oilsF3">Traçabilité complète</span></li>
+                  <li>• <span data-i18n="products.oilsF4">Emballage écologique</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-2 hover:border-green-200 transition-all duration-300 hover:shadow-lg rounded-lg">
+            <div class="text-center pb-4 p-8">
+              <div class="flex items-center justify-center w-16 h-16 bg-amber-500 rounded-full mx-auto mb-4">🌾</div>
+              <div class="text-2xl font-bold text-gray-900" data-i18n="products.mealTitle">Tourteaux de Soja</div>
+              <p class="text-gray-600 leading-relaxed mt-4" data-i18n="products.mealDesc">Tourteaux riches en protéines...</p>
+              <div class="mt-6 space-y-2">
+                <div class="font-semibold text-gray-900" data-i18n="products.features"></div>
+                <ul class="space-y-2 text-left mx-auto max-w-xs text-sm text-gray-600">
+                  <li>• <span data-i18n="products.mealF1">Riche en protéines</span></li>
+                  <li>• <span data-i18n="products.mealF2">Alimentation animale</span></li>
+                  <li>• <span data-i18n="products.mealF3">Applications industrielles</span></li>
+                  <li>• <span data-i18n="products.mealF4">Certification bio</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-2 hover:border-green-200 transition-all duration-300 hover:shadow-lg rounded-lg">
+            <div class="text-center pb-4 p-8">
+              <div class="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mx-auto mb-4">📦</div>
+              <div class="text-2xl font-bold text-gray-900" data-i18n="products.finishedTitle">Produits Finis</div>
+              <p class="text-gray-600 leading-relaxed mt-4" data-i18n="products.finishedDesc">Gamme diversifiée...</p>
+              <div class="mt-6 space-y-2">
+                <div class="font-semibold text-gray-900" data-i18n="products.features"></div>
+                <ul class="space-y-2 text-left mx-auto max-w-xs text-sm text-gray-600">
+                  <li>• <span data-i18n="products.finF1">Solutions sur mesure</span></li>
+                  <li>• <span data-i18n="products.finF2">Qualité constante</span></li>
+                  <li>• <span data-i18n="products.finF3">Livraison internationale</span></li>
+                  <li>• <span data-i18n="products.finF4">Support technique</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-green-600">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6" data-i18n="products.ctaTitle">Intéressé par nos produits ?</h2>
+          <p class="text-xl text-green-100 mb-8" data-i18n="products.ctaSubtitle">Contactez notre équipe commerciale...</p>
+          <a href="contact.html" class="inline-flex items-center justify-center bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg" data-i18n="products.cta"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+

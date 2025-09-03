@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engagement Durable - Benin Organics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="site-header"></div>
+  <main class="flex-1" id="page-sustainability">
+    <section class="py-16 bg-gradient-to-br from-green-50 to-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="inline-flex items-center mb-6 bg-green-100 text-green-800 px-4 py-2 rounded-full">🌿 <span class="ml-2" data-i18n="nav.sustainability"></span></span>
+          <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6" data-i18n="sustainability.title"></h1>
+          <p class="text-xl text-gray-600 leading-relaxed" data-i18n="sustainability.subtitle"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="border-2 hover:border-green-200 transition-all duration-300 hover:shadow-lg rounded-lg">
+              <div class="p-8 text-center">
+                <div class="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mx-auto mb-6">🌿</div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="sustainability.organic.title">Agriculture Biologique</h3>
+                <p class="text-gray-600" data-i18n="sustainability.organic.desc">Promotion des pratiques ...</p>
+              </div>
+            </div>
+            <div class="border-2 hover:border-green-200 transition-all duration-300 hover:shadow-lg rounded-lg">
+              <div class="p-8 text-center">
+                <div class="flex items-center justify-center w-16 h-16 bg-blue-500 rounded-full mx-auto mb-6">🛡️</div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="sustainability.traceability.title">Traçabilité Complète</h3>
+                <p class="text-gray-600" data-i18n="sustainability.traceability.desc">Suivi rigoureux ...</p>
+              </div>
+            </div>
+            <div class="border-2 hover:border-green-200 transition-all duration-300 hover:shadow-lg rounded-lg">
+              <div class="p-8 text-center">
+                <div class="flex items-center justify-center w-16 h-16 bg-purple-500 rounded-full mx-auto mb-6">🏅</div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="sustainability.quality.title">Contrôle Qualité</h3>
+                <p class="text-gray-600" data-i18n="sustainability.quality.desc">Standards de qualité ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900" data-i18n="sustainability.details">Nos Engagements Détaillés</h2>
+          </div>
+          <div class="w-full mb-8 grid grid-cols-3 gap-2">
+            <button class="px-4 py-2 rounded border bg-green-600 text-white" data-tab="environment" data-i18n="sustainability.tabs.environment"></button>
+            <button class="px-4 py-2 rounded border bg-white text-gray-700" data-tab="social" data-i18n="sustainability.tabs.social"></button>
+            <button class="px-4 py-2 rounded border bg-white text-gray-700" data-tab="economic" data-i18n="sustainability.tabs.economic"></button>
+          </div>
+
+          <div class="space-y-6">
+            <div data-tab-content="environment">
+              <div class="p-8 bg-white rounded-lg border">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="sustainability.environment.title">Protection Environnementale</h3>
+                    <ul class="space-y-3 text-gray-600">
+                      <li>• <span data-i18n="sustainability.environment.i1">Réduction de l'empreinte carbone</span></li>
+                      <li>• <span data-i18n="sustainability.environment.i2">Gestion durable des ressources en eau</span></li>
+                      <li>• <span data-i18n="sustainability.environment.i3">Préservation de la biodiversité</span></li>
+                      <li>• <span data-i18n="sustainability.environment.i4">Énergies renouvelables</span></li>
+                    </ul>
+                  </div>
+                  <div class="bg-green-50 rounded-lg p-6">
+                    <h4 class="font-semibold text-gray-900 mb-3" data-i18n="sustainability.environment.impact">Impact Environnemental</h4>
+                    <div class="space-y-4">
+                      <div>
+                        <div class="flex justify-between text-sm mb-1"><span data-i18n="sustainability.environment.co2">Réduction CO2</span><span>-35%</span></div>
+                        <div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-green-600 h-2 rounded-full" style="width:35%"></div></div>
+                      </div>
+                      <div>
+                        <div class="flex justify-between text-sm mb-1"><span data-i18n="sustainability.environment.water">Économie d'eau</span><span>-40%</span></div>
+                        <div class="w-full bg-gray-200 rounded-full h-2"><div class="bg-blue-600 h-2 rounded-full" style="width:40%"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hidden" data-tab-content="social">
+              <div class="p-8 bg-white rounded-lg border">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="sustainability.social.title">Impact Social</h3>
+                <ul class="space-y-3 text-gray-600">
+                  <li>• <span data-i18n="sustainability.social.i1">Formation des producteurs</span></li>
+                  <li>• <span data-i18n="sustainability.social.i2">Amélioration des conditions de travail</span></li>
+                  <li>• <span data-i18n="sustainability.social.i3">Égalité des genres</span></li>
+                  <li>• <span data-i18n="sustainability.social.i4">Développement communautaire</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden" data-tab-content="economic">
+              <div class="p-8 bg-white rounded-lg border">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="sustainability.economic.title">Développement Économique</h3>
+                <ul class="space-y-3 text-gray-600">
+                  <li>• <span data-i18n="sustainability.economic.i1">Prix équitables aux producteurs</span></li>
+                  <li>• <span data-i18n="sustainability.economic.i2">Investissement dans l'infrastructure locale</span></li>
+                  <li>• <span data-i18n="sustainability.economic.i3">Création d'emplois durables</span></li>
+                  <li>• <span data-i18n="sustainability.economic.i4">Transfert de technologie</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+

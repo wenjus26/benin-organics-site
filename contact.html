@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Benin Organics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="site-header"></div>
+  <main class="flex-1" id="page-contact">
+    <section class="py-16 bg-gradient-to-br from-green-50 to-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="inline-flex items-center mb-6 bg-green-100 text-green-800 px-4 py-2 rounded-full">✉️ <span class="ml-2" data-i18n="contact.title"></span></span>
+          <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6" data-i18n="contact.title"></h1>
+          <p class="text-xl text-gray-600 leading-relaxed" data-i18n="contact.subtitle">Nous sommes là pour répondre ...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div class="space-y-6">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6" data-i18n="contact.info">Informations de Contact</h2>
+            <div class="border-l-4 border-l-green-500 bg-white rounded-lg">
+              <div class="p-6 flex items-start space-x-4">
+                <div class="flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg">📍</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2" data-i18n="contact.addressLabel">Adresse</h3>
+                  <p class="text-gray-600" data-i18n="contact.address"></p>
+                </div>
+              </div>
+            </div>
+            <div class="border-l-4 border-l-blue-500 bg-white rounded-lg">
+              <div class="p-6 flex items-start space-x-4">
+                <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">📞</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2" data-i18n="contact.phoneLabel">Téléphone</h3>
+                  <p class="text-gray-600" data-i18n="contact.phone"></p>
+                </div>
+              </div>
+            </div>
+            <div class="border-l-4 border-l-purple-500 bg-white rounded-lg">
+              <div class="p-6 flex items-start space-x-4">
+                <div class="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg">✉️</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+                  <p class="text-gray-600" data-i18n="contact.email"></p>
+                </div>
+              </div>
+            </div>
+            <div class="border-l-4 border-l-orange-500 bg-white rounded-lg">
+              <div class="p-6 flex items-start space-x-4">
+                <div class="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">🕒</div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2" data-i18n="contact.hoursLabel">Horaires</h3>
+                  <p class="text-gray-600" data-i18n="contact.hours">Lun - Ven: 8h00 - 17h00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="border-2 border-green-100 rounded-lg bg-white">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="contact.formTitle">Envoyez-nous un message</h3>
+                <form id="contact-form" class="space-y-6">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                      <label class="block text-sm font-medium" for="name" data-i18n="contact.form.name"></label>
+                      <input id="name" name="name" required class="w-full border rounded px-3 py-2 border-gray-300 focus:outline-none focus:ring focus:ring-green-200" />
+                    </div>
+                    <div class="space-y-2">
+                      <label class="block text-sm font-medium" for="email" data-i18n="contact.form.email"></label>
+                      <input id="email" name="email" type="email" required class="w-full border rounded px-3 py-2 border-gray-300 focus:outline-none focus:ring focus:ring-green-200" />
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <label class="block text-sm font-medium" for="company" data-i18n="contact.form.company"></label>
+                    <input id="company" name="company" class="w-full border rounded px-3 py-2 border-gray-300 focus:outline-none focus:ring focus:ring-green-200" />
+                  </div>
+                  <div class="space-y-2">
+                    <label class="block text-sm font-medium" for="message" data-i18n="contact.form.message"></label>
+                    <textarea id="message" name="message" rows="5" required class="w-full border rounded px-3 py-2 border-gray-300 focus:outline-none focus:ring focus:ring-green-200" placeholder=""></textarea>
+                  </div>
+                  <button id="contact-submit" type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded" data-i18n="contact.form.send"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8" data-i18n="contact.location">Notre Localisation</h2>
+          <div class="overflow-hidden rounded-lg border">
+            <div class="bg-gradient-to-br from-green-100 to-green-200 h-64 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-3xl mb-2">📍</div>
+                <p class="text-gray-700 font-medium" data-i18n="contact.address"></p>
+                <p class="text-gray-600 text-sm mt-2" data-i18n="contact.mapSoon">Carte interactive disponible prochainement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+  <script>/* placeholder for page-specific if needed */</script>
+  
+</body>
+</html>
+
+
