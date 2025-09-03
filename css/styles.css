@@ -1,1 +1,13 @@
+/* Site custom styles (supplement Tailwind) */
+.bg-grid-pattern{background-image:linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px);background-size:24px 24px}
+.nav-active{color:#16a34a;border-bottom:2px solid #16a34a}
+.nav-link{transition:color .2s ease}
+.nav-link:hover{color:#16a34a}
+.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.line-clamp-3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.container{max-width:1200px}
+
+/* Global background to match brand */
+body{background:linear-gradient(180deg, #f0fdf4 0%, #ffffff 30%, #f0fdf4 100%)}
+
 
