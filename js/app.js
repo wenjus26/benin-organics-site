@@ -121,8 +121,6 @@
           '<a href="index.html" class="flex items-center space-x-2">'+
             '<img src="logo_bo.png" alt="Benin Organics" class="w-12 h-12 rounded-lg object-contain" />'+
             '<div class="hidden sm:block">'+
-              '<div class="font-bold text-lg text-gray-900">Benin Organics</div>'+
-              '<div class="text-xs text-green-600 font-medium">SA</div>'+
             '</div>'+
           '</a>'+
           '<nav class="hidden md:flex items-center space-x-1">'+
@@ -181,52 +179,80 @@
 
     $('main').addClass('pt-16');
   }
-
-  function renderFooter(){
-    var t = translations[state.lang];
-    var html = ''+
-    '<footer class="bg-gray-900 text-white">'+
-      '<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">'+
-        '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">'+
-          '<div class="space-y-4">'+
-            '<div class="flex items-center space-x-2">'+
-              '<div class="flex items-center justify-center w-10 h-10 bg-green-600 rounded-lg"><span class="text-white">🌿</span></div>'+
-              '<div><div class="font-bold text-lg">Benin Organics</div><div class="text-sm text-green-400">SA</div></div>'+
+function renderFooter(){
+  var t = translations[state.lang];
+  var html = ''+
+  '<footer class="bg-gray-900 text-white">'+
+    '<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">'+
+      '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">'+
+        '<div class="space-y-4">'+
+          '<div class="flex items-center space-x-2">'+
+            '<div class="flex items-center justify-center w-10 h-10 bg-green-600 rounded-lg">'+
+              '<i class="fas fa-seedling text-white text-lg"></i>'+
             '</div>'+
-            '<p class="text-gray-300 text-sm leading-relaxed">'+(state.lang==='fr'?'Leader africain dans la transformation du soja biologique certifié, au service de 25 000 producteurs locaux.':'African leader in certified organic soy transformation, serving 25,000 local producers.')+'</p>'+
-          '</div>'+
-          '<div>'+
-            '<h3 class="font-semibold text-lg mb-4">'+t.footer.quickLinks+'</h3>'+
-            '<ul class="space-y-2">'+
-              '<li><a href="index.html" class="text-gray-300 hover:text-green-400">'+t.nav.home+'</a></li>'+
-              '<li><a href="products.html" class="text-gray-300 hover:text-green-400">'+t.nav.products+'</a></li>'+
-              '<li><a href="sustainability.html" class="text-gray-300 hover:text-green-400">'+t.nav.sustainability+'</a></li>'+
-              '<li><a href="partnerships.html" class="text-gray-300 hover:text-green-400">'+t.nav.partnerships+'</a></li>'+
-            '</ul>'+
-          '</div>'+
-          '<div>'+
-            '<h3 class="font-semibold text-lg mb-4">'+t.footer.contact+'</h3>'+
-            '<ul class="space-y-3">'+
-              '<li class="flex items-start space-x-2"><span class="text-green-400">📍</span><span class="text-gray-300 text-sm">'+t.contact.address+'</span></li>'+
-              '<li class="flex items-start space-x-2"><span class="text-green-400">📞</span><span class="text-gray-300 text-sm">'+t.contact.phone+'</span></li>'+
-              '<li class="flex items-start space-x-2"><span class="text-green-400">✉️</span><span class="text-gray-300 text-sm">'+t.contact.email+'</span></li>'+
-            '</ul>'+
-          '</div>'+
-          '<div>'+
-            '<h3 class="font-semibold text-lg mb-4">'+t.footer.certifications+'</h3>'+
-            '<div class="space-y-3">'+
-              '<div class="flex items-center space-x-2"><div class="w-8 h-8 bg-green-600 rounded flex items-center justify-center"><span class="text-xs font-bold text-white">US</span></div><span class="text-gray-300 text-sm">'+translations[state.lang].home.certifications.usda+'</span></div>'+
-              '<div class="flex items-center space-x-2"><div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center"><span class="text-xs font-bold text-white">EU</span></div><span class="text-gray-300 text-sm">'+translations[state.lang].home.certifications.eu+'</span></div>'+
+            '<div>'+
+              '<div class="font-bold text-lg">Benin Organics</div>'+
+              '<div class="text-sm text-green-400">SA</div>'+
             '</div>'+
           '</div>'+
+          '<p class="text-gray-300 text-sm leading-relaxed">'+
+            (state.lang==='fr'
+              ? 'Leader africain dans la transformation du soja biologique certifié, au service de 25 000 producteurs locaux.'
+              : 'African leader in certified organic soy transformation, serving 25,000 local producers.')+
+          '</p>'+
         '</div>'+
-        '<div class="border-t border-gray-800 mt-8 pt-8 text-center">'+
-          '<p class="text-gray-400 text-sm">'+t.footer.rights+'</p>'+
+        '<div>'+
+          '<h3 class="font-semibold text-lg mb-4">'+t.footer.quickLinks+'</h3>'+
+          '<ul class="space-y-2">'+
+            '<li><a href="index.html" class="text-gray-300 hover:text-green-400">'+t.nav.home+'</a></li>'+
+            '<li><a href="products.html" class="text-gray-300 hover:text-green-400">'+t.nav.products+'</a></li>'+
+            '<li><a href="sustainability.html" class="text-gray-300 hover:text-green-400">'+t.nav.sustainability+'</a></li>'+
+            '<li><a href="partnerships.html" class="text-gray-300 hover:text-green-400">'+t.nav.partnerships+'</a></li>'+
+          '</ul>'+
+        '</div>'+
+        '<div>'+
+          '<h3 class="font-semibold text-lg mb-4">'+t.footer.contact+'</h3>'+
+          '<ul class="space-y-3">'+
+            '<li class="flex items-start space-x-2">'+
+              '<i class="fas fa-map-marker-alt text-green-400 mt-1"></i>'+
+              '<span class="text-gray-300 text-sm">'+t.contact.address+'</span>'+
+            '</li>'+
+            '<li class="flex items-start space-x-2">'+
+              '<i class="fas fa-phone text-green-400 mt-1"></i>'+
+              '<span class="text-gray-300 text-sm">'+t.contact.phone+'</span>'+
+            '</li>'+
+            '<li class="flex items-start space-x-2">'+
+              '<i class="fas fa-envelope text-green-400 mt-1"></i>'+
+              '<span class="text-gray-300 text-sm">'+t.contact.email+'</span>'+
+            '</li>'+
+          '</ul>'+
+        '</div>'+
+        '<div>'+
+          '<h3 class="font-semibold text-lg mb-4">'+t.footer.certifications+'</h3>'+
+          '<div class="space-y-3">'+
+            '<div class="flex items-center space-x-2">'+
+              '<div class="w-8 h-8 bg-green-600 rounded flex items-center justify-center">'+
+                '<span class="text-xs font-bold text-white">US</span>'+
+              '</div>'+
+              '<span class="text-gray-300 text-sm">'+translations[state.lang].home.certifications.usda+'</span>'+
+            '</div>'+
+            '<div class="flex items-center space-x-2">'+
+              '<div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">'+
+                '<span class="text-xs font-bold text-white">EU</span>'+
+              '</div>'+
+              '<span class="text-gray-300 text-sm">'+translations[state.lang].home.certifications.eu+'</span>'+
+            '</div>'+
+          '</div>'+
         '</div>'+
       '</div>'+
-    '</footer>';
-    $('#site-footer').html(html);
-  }
+      '<div class="border-t border-gray-800 mt-8 pt-8 text-center">'+
+        '<p class="text-gray-400 text-sm">'+t.footer.rights+'</p>'+
+      '</div>'+
+    '</div>'+
+  '</footer>';
+  $('#site-footer').html(html);
+}
+
 
   function i18nFill(){
     var t = translations[state.lang];

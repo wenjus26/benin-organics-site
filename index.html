@@ -7,23 +7,34 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Exemple de background pour la Hero Section */
+    .hero-bg {
+      background-image: url('images/hero-background.jpg'); /* <-- Remplace par ton image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
 <body class="min-h-screen flex flex-col">
   <div id="site-header"></div>
   <main class="flex-1" id="page-home">
+
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-green-50 via-white to-green-50 py-20 lg:py-32 overflow-hidden">
-      <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section class="relative hero-bg py-20 lg:py-32 overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div> <!-- overlay sombre pour contraste -->
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
           <span class="inline-flex items-center mb-6 bg-green-100 text-green-800 px-4 py-2 rounded-full">
-            <span class="mr-2">🌿</span>
+            <i class="fas fa-seedling mr-2"></i>
             <span data-i18n="home.hero.badge">Certifié Biologique</span>
           </span>
 
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" data-i18n="home.hero.title"></h1>
-          <div class="text-2xl sm:text-3xl font-semibold text-green-600 mb-6" data-i18n="home.hero.subtitle"></div>
-          <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed" data-i18n="home.hero.description"></p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" data-i18n="home.hero.title"></h1>
+          <div class="text-2xl sm:text-3xl font-semibold text-green-200 mb-6" data-i18n="home.hero.subtitle"></div>
+          <p class="text-lg sm:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed" data-i18n="home.hero.description"></p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="products.html" class="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md text-lg">
@@ -41,17 +52,23 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div class="text-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">👥</div>
+            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">
+              <i class="fas fa-users text-green-600 text-xl"></i>
+            </div>
             <div class="text-3xl font-bold text-gray-900 mb-2" data-i18n="home.stats.producers"></div>
             <div class="text-gray-600" data-i18n="home.stats.producersLabel"></div>
           </div>
           <div class="text-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">📈</div>
+            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">
+              <i class="fas fa-chart-line text-green-600 text-xl"></i>
+            </div>
             <div class="text-3xl font-bold text-gray-900 mb-2" data-i18n="home.stats.experience"></div>
             <div class="text-gray-600" data-i18n="home.stats.experienceLabel"></div>
           </div>
           <div class="text-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">🏭</div>
+            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4">
+              <i class="fas fa-industry text-green-600 text-xl"></i>
+            </div>
             <div class="text-3xl font-bold text-gray-900 mb-2" data-i18n="home.stats.capacity"></div>
             <div class="text-gray-600" data-i18n="home.stats.capacityLabel"></div>
           </div>
@@ -119,11 +136,10 @@
         </div>
       </div>
     </section>
+
   </main>
   <div id="site-footer"></div>
 
   <script src="js/app.js"></script>
 </body>
 </html>
-
-
